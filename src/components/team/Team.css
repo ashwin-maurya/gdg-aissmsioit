@@ -1,0 +1,152 @@
+.team-body {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.team span::after {
+  display: table;
+  margin: 0 auto;
+  content: "";
+  border: 0.2rem solid #2b98c3;
+  border-radius: 4px;
+  width: 4rem;
+}
+
+.team-body p {
+  padding: 9rem;
+  padding-top: 1rem;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  overflow: hidden;
+}
+
+.vector-img {
+  margin-top: 8em;
+  padding-left: 4%;
+}
+
+.vector-img img {
+  width: 100%;
+  height: 90%;
+}
+
+
+
+@keyframes buttonContainerAnim {
+  0% {
+    opacity: 0;
+    height: 2%;
+  }
+
+  50% {
+    opacity: 0.5;
+    height: 6%;
+  }
+
+  100% {
+    opacity: 1;
+    height: 10%;
+  }
+}
+
+.button-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 20%;  
+  animation: buttonContainerAnim 1s linear;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 1%;
+  border: none; 
+  border-radius: 30px;
+  background-color: transparent; 
+  font-weight: 1000;
+  font-size: 25px;
+  padding: 5px 30px;
+  animation: buttonContainerAnim 1s linear;
+}
+
+.button-container button.active {
+  color: #009ffd;
+  font-weight: 600;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.button-container button.gred:hover {
+  color: #fff;
+  background-color: #ea4335;
+  transform: scale(1.05);
+}
+
+.button-container button.gyellow:hover {
+  color: #fff;
+  background-color: #fbbc04;
+  transform: scale(1.05);   
+}
+
+.button-container button.ggreen:hover {
+  color: #fff;
+  background-color: #34a853;
+  transform: scale(1.05);
+}
+
+.button-container button.gblue:hover {
+  color: #fff; 
+  background-color: #4285f4;
+  transform: scale(1.05); 
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .custom-button {
+    padding: 13px 50px;
+  }
+}
+
+
+/****** RESPONSIVE *****/
+@media (max-width: 769px) {
+  .team-body {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .team-body p {
+    padding: 3%;
+    padding-top: 1rem;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+  }
+
+  .vector-img img {
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .vector-img {
+    margin-top: 4em;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vector-img {
+    margin-top: 18%;
+    width: 100%;
+  }
+}
